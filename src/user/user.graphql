@@ -1,0 +1,14 @@
+scalar Upload
+
+type Query {
+  getUser: String!
+}
+
+type SuccessType {
+  success: Boolean!
+  message: String!
+}
+
+type Mutation {
+  upload(file: Upload): SuccessType
+}
